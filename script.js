@@ -10,5 +10,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     console.log('Email:', email);
     console.log('Number:',number);
     console.log('Number:',date);
-    console.log('Number:',time);
+    // console.log('Number:',time);
   });
