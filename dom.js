@@ -21,7 +21,16 @@ additems.style.color = ' green ';
 additems.style.fontWeight = 'bold';
  
 
-const items = document.getElementsByClassName('list-group-item');
+// const items = document.getElementsByClassName('list-group-item');
+// //task : Make the 3 rd element in the list have green background color
+// items[2].style.background = 'green' ;
+//  // Make all the elements in the list have bold color font
+//  for(let i=0;i<items.length ; i++){
+//     items[i].style.fontWeight = 'bold';
+//  }
+
+//get elemets by tag name 
+const items = document.getElementsByTagName('li');
 //task : Make the 3 rd element in the list have green background color
 items[2].style.background = 'green' ;
  // Make all the elements in the list have bold color font
