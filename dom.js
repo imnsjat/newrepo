@@ -49,12 +49,49 @@ additems.style.fontWeight = 'bold';
 // const thirditem = document.querySelector('.list-group-item:nth-child(3)');
 // thirditem.style.display = 'none';
 
-const items = document.querySelectorAll('.list-group-item');
+// const items = document.querySelectorAll('.list-group-item');
 
-items[1].style.color = 'green';
+// items[1].style.color = 'green';
 
-const odd=  document.querySelectorAll('li:nth-child(odd)');
-for(let i=0;i<odd.length;i++){
-    odd[i].style.background = 'green';
-}
+// const odd=  document.querySelectorAll('li:nth-child(odd)');
+// for(let i=0;i<odd.length;i++){
+//     odd[i].style.background = 'green';
+// }
+
+// traversing the dom  .. parent child //
+
+const itemList = document.querySelector('#items');
+ // parent node
+//  console.log(itemList.parentNode);
+// console.log(itemList.parentNode.parentNode);
+
+// console.log(itemList.parentElement);
+
+//child nodes
+
+// console.log(itemList.childNodes);
+console.log(itemList.children);
+// itemList.children[1].style.background = 'yellow';
+
+// itemList.firstElementChild.textContent = 'hello 1';
+// itemList.lastElementChild.textContent = 'hello 4';
+// console.log(itemList.previousElementSibling);  
+
+/* TASK Now go head and add HEllo word before Item Lister
+Now go head and add HEllo word before Item 1 */ 
+
+const textt = document.createTextNode('HELLO WORLD');
+const newdiv = document.createElement('div');
+newdiv.appendChild(textt);
+// const  head = document.querySelector('head');
+// console.log(head);
+// const itemlister = document.querySelector('head title');
+// head.insertBefore(newdiv,itemlister);
+const  list = document.querySelector('.list-group');
+const listitem1 = document.querySelector('.list-group-item');
+list.insertBefore(newdiv,listitem1);
+
+
+
+
 
