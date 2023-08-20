@@ -29,11 +29,32 @@ additems.style.fontWeight = 'bold';
 //     items[i].style.fontWeight = 'bold';
 //  }
 
-//get elemets by tag name 
-const items = document.getElementsByTagName('li');
-//task : Make the 3 rd element in the list have green background color
-items[2].style.background = 'green' ;
- // Make all the elements in the list have bold color font
- for(let i=0;i<items.length ; i++){
-    items[i].style.fontWeight = 'bold';
- }
+// //get elemets by tag name 
+// const items = document.getElementsByTagName('li');
+// //task : Make the 3 rd element in the list have green background color
+// items[2].style.background = 'green' ;
+//  // Make all the elements in the list have bold color font
+//  for(let i=0;i<items.length ; i++){
+//     items[i].style.fontWeight = 'bold';
+//  }
+
+//querySelector - for one element   #id  .class
+//querySelectorAll for multiple 
+
+// const secounditem = document.querySelector('.list-group-item:nth-child(2)');
+// // console.log(secounditem);
+// secounditem.style.background = ' green ';
+
+
+// const thirditem = document.querySelector('.list-group-item:nth-child(3)');
+// thirditem.style.display = 'none';
+
+const items = document.querySelectorAll('.list-group-item');
+
+items[1].style.color = 'green';
+
+const odd=  document.querySelectorAll('li:nth-child(odd)');
+for(let i=0;i<odd.length;i++){
+    odd[i].style.background = 'green';
+}
+
